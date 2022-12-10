@@ -1,3 +1,27 @@
+# E-Commerce Website using React 
+
+using firebase authentication you can't access the cart unless you are a user , each user have his own cart and profile with his history.
+
+# Pages 
+
+- home 
+- login
+- products 
+- product details 
+- cart 
+- profile 
+
+# Technologies
+
+- React 
+- Firebase 
+- Bootstrap 
+- Ant Design 
+- React Toastify
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
