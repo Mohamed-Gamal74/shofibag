@@ -1,0 +1,9 @@
+.sectionContainer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sectionContainer span {
+  font-family: "Zen Dots", cursive;
+  font-size: 4rem;
+}

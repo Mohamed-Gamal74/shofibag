@@ -1,0 +1,38 @@
+nav {
+  max-height: 72px;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.navItem {
+  flex: 0.75;
+  padding: 10px;
+  margin: 0 auto;
+}
+.active {
+  position: relative;
+  color: var(--main-color);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-50%);
+  background-color: var(--main-color);
+}
+
+.active a {
+  color: var(--main-color);
+}

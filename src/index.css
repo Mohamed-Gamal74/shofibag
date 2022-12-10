@@ -1,0 +1,186 @@
+:root {
+  --main-color: #f56c44;
+  --dark-color: #23232f;
+  --darkLight-color: #72748e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--dark-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darkLight-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+li {
+  list-style: none;
+}
+
+.sectionContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.w__700 {
+  font-weight: 700;
+}
+
+.mainColor {
+  color: var(--main-color);
+}
+
+.mainColorBack {
+  background-color: var(--main-color);
+}
+
+.darkColor {
+  color: var(--dark-color);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.borderRaduis {
+  border-radius: 8px;
+}
+
+.text1 {
+  color: #088178;
+  background-color: #fddde4;
+}
+
+.text2 {
+  background-color: #cdebbc;
+}
+
+.text3 {
+  background-color: #d1e8f2;
+}
+
+.text4 {
+  background-color: #cdd4f8;
+}
+
+.text5 {
+  background-color: #f6dbf6;
+}
+
+.text6 {
+  background-color: #fff2e5;
+}
+
+.cardHover:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+
+.zenDots {
+  font-family: "Zen Dots", cursive;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.ant-segmented-group {
+  height: 50px;
+}
+
+.ant-segmented-item {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ant-segmented-item-selected {
+  background-color: #ff7664 !important;
+  color: #fff !important;
+}
+
+.ant-space-item {
+  position: relative;
+}
+
+.ant-dropdown-menu {
+  position: absolute;
+  left: -45%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.ant-dropdown-menu::-webkit-scrollbar {
+  width: 0px;
+}
+
+.Toastify__toast {
+  box-shadow: none !important;
+}
+
+.ant-pagination {
+  display: none !important;
+}
+
+.ant-btn-default {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.ant-btn-default:hover {
+  background-color: #fff;
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+.ant-btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #f28172 !important;
+  color: #fff;
+}
+
