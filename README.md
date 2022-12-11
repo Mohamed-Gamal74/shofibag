@@ -1,5 +1,7 @@
 # E-Commerce Website using React 
 
+Live Demo  : https://shofibag.netlify.app/ 
+
 using firebase authentication you can't access the cart unless you are a user , each user have his own cart and profile with his history.
 
 # Pages 
