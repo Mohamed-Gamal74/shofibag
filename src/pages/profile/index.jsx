@@ -92,14 +92,16 @@ const Profile = () => {
       </div>
       <div className="sectionContainer row">
         <div className="col-md-8">
-          <h1 className="w__700 mainColor text-uppercase">
+          <h1 className={ `${styles.header} w__700 mainColor text-uppercase `}>
             {username} Shopping History
           </h1>
 
           <Table
             columns={columns}
             dataSource={data}
-            className="shadow-sm borderRaduis "
+            className={  `${styles.table} shadow-sm borderRaduis `}
+          
+            
             
           />
         </div>

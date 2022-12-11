@@ -3,6 +3,7 @@ import login from "../../images/login.png";
 import Login from "./Login";
 import Signup from "./Signup";
 import { Segmented } from "antd";
+import styles from "./login.module.css";
 
 const Register = () => {
   const [value, setValue] = useState("login");
@@ -14,7 +15,7 @@ const Register = () => {
   return (
     <section className="sectionContainer py-5">
       <div className="row mb-5">
-        <div className="col-md-6 mt-4">
+        <div className={`${styles.imgContainer} col-md-6 mt-4 ` }>
           <img src={login} alt="login" />
         </div>
 

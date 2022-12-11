@@ -14,7 +14,7 @@ const HeroSection = () => {
       className={`${styles.sectionContainer}  d-flex align-items-center justify-content-center p-5 `}
     >
       <div className="row ">
-        <div className="col px-5  align-self-center">
+        <div className={`${styles.content} col px-5  align-self-center ` }>
           <b className="text-black-50">Trade-in-offer</b>
           <h1 className="mb-4">
             Super Value Deals <br />

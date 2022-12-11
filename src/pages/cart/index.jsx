@@ -8,6 +8,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Modal } from "antd";
 import firebase from "firebase/compat/app";
+import styles from "./cart.module.css";
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
@@ -163,7 +164,7 @@ const Cart = () => {
       className="py-5 mt-5 sectionContainer"
     >
       {cart?.length === 0 ? (
-        <div className="d-flex justify-content-center flex-column align-items-center">
+        <div className={`${styles.cartImg} d-flex justify-content-center flex-column align-items-center`}>
           <img src={cartImg} alt="cart" className="mb-2" />
           <h2 className="zenDots mainColor text-uppercase">
             Your cart is empty

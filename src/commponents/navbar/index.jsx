@@ -13,7 +13,9 @@ import DropDown from "../dropDown";
 const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, logOut, getUsername , username } = useUserAuth();
+  const { user, logOut, getUsername, username } = useUserAuth();
+  const [open, setOpen] = useState(true);
+
 
   const handleLogin = () => {
     navigate("/login");
@@ -32,6 +34,13 @@ const NavBar = () => {
     navigate("/");
   };
 
+  const toggle = () => {
+    setOpen(!open);
+
+    
+  
+  };
+
   return (
     <nav className=" d-flex align-items-center justify-content-between px-5  ">
       <div className={styles.logo} onClick={handleHome}>
@@ -39,7 +48,10 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`${styles.navItem} d-flex align-items-center  justify-content-center`}
+        className={`d-flex align-items-center ${ 
+          open ? `${styles.navItem} ${styles.open}` : `${styles.navItem}`
+        }`}
+        
       >
         <li
           className={`px-5 ${
@@ -88,9 +100,12 @@ const NavBar = () => {
           </div>
         ) : (
           <div className="d-flex align-items-center">
-            <Link to="./profile"  className={`px-5  d-flex align-items-center ${
+            <Link
+              to="./profile"
+              className={`px-5  d-flex align-items-center ${
                 location.pathname === "/profile" ? `${styles.active}` : ""
-              }  `} >
+              }  `}
+            >
               <FaUserCircle className="mr-2" />
               <p className="m-0 w__700 text-uppercase">{username}</p>
             </Link>
@@ -102,6 +117,14 @@ const NavBar = () => {
             />
           </div>
         )}
+
+        <div className={styles.navMenu} onClick={toggle}>
+          <div
+            className={
+              open ? `${styles.line} ${styles.open} ` : `${styles.line}`
+            }
+          ></div>
+        </div>
       </div>
     </nav>
   );

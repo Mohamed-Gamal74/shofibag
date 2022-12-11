@@ -39,3 +39,11 @@
 .star {
   color : #fdcc0d;
 }
+
+@media screen and (max-width: 500px)
+ {
+  .imgContainer {
+    margin: 0 auto;
+  }
+  
+}

@@ -26,7 +26,7 @@ const Products = () => {
           <p>Save more with coupons & up to 70% off!</p>
         </div>
       </div>
-      <div className="row sectionContainer">
+      <div className="row sectionContainer mt-4">
         {products.length === 0 ? (
           <Loader />
         ) : (
