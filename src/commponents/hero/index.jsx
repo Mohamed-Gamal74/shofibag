@@ -11,14 +11,14 @@ const HeroSection = () => {
 
   return (
     <section
-      className={`${styles.sectionContainer}  d-flex align-items-center justify-content-center p-5 `}
+      className=' d-flex align-items-center justify-content-center p-5 '
     >
       <div className="row ">
         <div className={`${styles.content} col px-5  align-self-center ` }>
           <b className="text-black-50">Trade-in-offer</b>
           <h1 className="mb-4">
             Super Value Deals <br />
-            <span className="mainColor">On All Products</span>
+            <span className="mainColor zenDots">On All Products</span>
           </h1>
           <button
             className="btn w__700 text-white mainColorBack px-5 py-2 "

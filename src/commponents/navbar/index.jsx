@@ -42,7 +42,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className=" d-flex align-items-center justify-content-between px-5  ">
+    <nav className=" d-flex align-items-center justify-content-between   ">
       <div className={styles.logo} onClick={handleHome}>
         <img src={logo} alt="logo" className="w-75 h-100 cursor" />
       </div>
